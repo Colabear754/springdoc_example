@@ -1,0 +1,30 @@
+# DB
+spring:
+  datasource:
+    url: jdbc:mysql://144.24.71.11:3306/blog?characterEncoding=utf8
+    username: root
+    password: zfXK7aHF=eR=
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# MyBatis
+mybatis:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  type-aliases-package: com.colabear754.springdoc_example.domain
+  configuration.jdbc-type-for-null: null
+
+# Swagger
+springdoc:
+  packages-to-scan: com.colabear754.scheduler_example.controllers
+  api-docs:
+    groups:
+      enabled: true
+  cache:
+    disabled: true
+  default-consumes-media-type: application/json;charset=UTF-8
+  default-produces-media-type: application/json;charset=UTF-8
+  swagger-ui:
+    path: /
+    display-request-duration: true
+    groups-order: desc
+    operations-sorter: method
+    disable-swagger-default-url: true

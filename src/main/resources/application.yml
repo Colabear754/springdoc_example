@@ -1,9 +1,9 @@
 # DB
 spring:
   datasource:
-    url: jdbc:mysql://144.24.71.11:3306/blog?characterEncoding=utf8
-    username: root
-    password: zfXK7aHF=eR=
+    url: url
+    username: username
+    password: password
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 # MyBatis
@@ -14,17 +14,11 @@ mybatis:
 
 # Swagger
 springdoc:
-  packages-to-scan: com.colabear754.scheduler_example.controllers
-  api-docs:
-    groups:
-      enabled: true
-  cache:
-    disabled: true
+  packages-to-scan: com.colabear754.springdoc_example.controllers
   default-consumes-media-type: application/json;charset=UTF-8
   default-produces-media-type: application/json;charset=UTF-8
   swagger-ui:
     path: /
-    display-request-duration: true
-    groups-order: desc
-    operations-sorter: method
     disable-swagger-default-url: true
+    display-request-duration: true
+    operations-sorter: alpha

@@ -1,1 +1,1 @@
-rootProject.name = "swagger_example"
+rootProject.name = "springdoc_example"
